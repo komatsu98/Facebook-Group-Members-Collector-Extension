@@ -1,0 +1,28 @@
+{
+  "name": "FGMC",
+  "description": "Facebook Group Members Collector",
+  "version": "0.2",
+  "author": "https://github.com/komatsu98",
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "browser_action": {
+    "default_title": "Facebook Group Members Collector",
+    "default_icon": "logo.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["https://*.facebook.com/*", "downloads", "tabs", "storage", "unlimitedStorage", "declarativeContent", "webRequest", "webRequestBlocking", "webNavigation", "management"],
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["http://*.facebook.com/*", "https://*.facebook.com/*", "https://monitaz.com/*", "https://*.monitaz.com/*"],
+      "js": ["js/jquery.min.js", "js/content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "devtools_page": "devtools.html"
+}

@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Facebook Group Members Collector</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            #wrapper {
+                width: 400px;
+            }
+
+            .glyphicon-heart {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="container-fluid">
+                <h4>
+                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                    Facebook Group Members Collector
+                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                </h4>
+
+                <div class="form-group">
+                    <label for="groups">Group ID</label>
+                    <textarea class="form-control" rows="5" id="groups" placeholder="Vui lòng nhập group ID. VD : 3097381313721874, VietDesigner.Net, ..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-sm btn-success" id="start">
+                        <span class="glyphicon glyphicon-check" aria-hidden="true"></span> 
+                        Bắt đầu
+                    </button>
+                    <button class="btn btn-sm btn-warning" id="stop">
+                        <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>
+                        Nghỉ chút
+                    </button>
+                    <button class="btn btn-sm btn-primary" id="continue">
+                        <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                        Tiếp tục
+                    </button>
+                    <button class="btn btn-sm btn-danger" id="download">
+                        <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+                        Download ID
+                    </button>
+
+                </div> 
+            </div>
+        </div>
+    </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popup.js"></script>
+</html>
